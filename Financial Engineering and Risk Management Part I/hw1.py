@@ -29,7 +29,6 @@ class FixedIncome():
         r = 0.12
         n = 6
         original_apartment_npv = - (principal[0] + principal[0] * self.annuity(r,n)) + self.pv(principal[0],r,n)
-        print(self.pv(principal[0],r,n))
         new_apartment_npv = - (principal[0] + principal[1]) - (principal[1] + principal[1] * self.annuity(r,n-1)) + self.pv(principal[1],r,n)
         if original_apartment_npv > new_apartment_npv:
             solution = print('STAY')
